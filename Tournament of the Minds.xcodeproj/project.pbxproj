@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120BDBBB288F6FDD0037DB87 /* MicroBitConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120BDBBA288F6FDD0037DB87 /* MicroBitConnectivity.swift */; };
 		12573EB0288F67C40024A9A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12573EAF288F67C40024A9A6 /* AppDelegate.swift */; };
 		12573EB2288F67C40024A9A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12573EB1288F67C40024A9A6 /* SceneDelegate.swift */; };
 		12573EB4288F67C40024A9A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12573EB3288F67C40024A9A6 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120BDBBA288F6FDD0037DB87 /* MicroBitConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroBitConnectivity.swift; sourceTree = "<group>"; };
 		12573EAC288F67C40024A9A6 /* Tournament of the Minds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tournament of the Minds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12573EAF288F67C40024A9A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12573EB1288F67C40024A9A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				12573EAF288F67C40024A9A6 /* AppDelegate.swift */,
 				12573EB1288F67C40024A9A6 /* SceneDelegate.swift */,
 				12573EB3288F67C40024A9A6 /* ViewController.swift */,
+				120BDBBA288F6FDD0037DB87 /* MicroBitConnectivity.swift */,
 				12573EB5288F67C40024A9A6 /* Main.storyboard */,
 				12573EB8288F67C50024A9A6 /* Assets.xcassets */,
 				12573EBA288F67C50024A9A6 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12573EB4288F67C40024A9A6 /* ViewController.swift in Sources */,
+				120BDBBB288F6FDD0037DB87 /* MicroBitConnectivity.swift in Sources */,
 				12573EB0288F67C40024A9A6 /* AppDelegate.swift in Sources */,
 				12573EB2288F67C40024A9A6 /* SceneDelegate.swift in Sources */,
 			);
