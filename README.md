@@ -1,2 +1,3 @@
 This submission is under construction...
-The 3D model will be added shortly.
+
+To use this app correctly, unzip the "Nugget.usdz.zip" file before opening in Xcode.
