@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		120BDBBB288F6FDD0037DB87 /* MicroBitConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120BDBBA288F6FDD0037DB87 /* MicroBitConnectivity.swift */; };
 		12573EB0288F67C40024A9A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12573EAF288F67C40024A9A6 /* AppDelegate.swift */; };
 		12573EB2288F67C40024A9A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12573EB1288F67C40024A9A6 /* SceneDelegate.swift */; };
 		12573EB4288F67C40024A9A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12573EB3288F67C40024A9A6 /* ViewController.swift */; };
 		12573EB7288F67C40024A9A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12573EB5288F67C40024A9A6 /* Main.storyboard */; };
 		12573EB9288F67C50024A9A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12573EB8288F67C50024A9A6 /* Assets.xcassets */; };
 		12573EBC288F67C50024A9A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12573EBA288F67C50024A9A6 /* LaunchScreen.storyboard */; };
+		12AF44A828AFA26E00FCE72C /* Nugget.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 12AF44A728AFA26E00FCE72C /* Nugget.usdz */; };
+		12F81AEB28A33C3A009DF0D9 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F81AEA28A33C3A009DF0D9 /* DemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		120BDBBA288F6FDD0037DB87 /* MicroBitConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroBitConnectivity.swift; sourceTree = "<group>"; };
 		12573EAC288F67C40024A9A6 /* Tournament of the Minds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tournament of the Minds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12573EAF288F67C40024A9A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12573EB1288F67C40024A9A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +26,8 @@
 		12573EB8288F67C50024A9A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12573EBB288F67C50024A9A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12573EBD288F67C50024A9A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12AF44A728AFA26E00FCE72C /* Nugget.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Nugget.usdz; path = ../../../../Downloads/Nugget.usdz; sourceTree = "<group>"; };
+		12F81AEA28A33C3A009DF0D9 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +63,11 @@
 				12573EAF288F67C40024A9A6 /* AppDelegate.swift */,
 				12573EB1288F67C40024A9A6 /* SceneDelegate.swift */,
 				12573EB3288F67C40024A9A6 /* ViewController.swift */,
-				120BDBBA288F6FDD0037DB87 /* MicroBitConnectivity.swift */,
+				12F81AEA28A33C3A009DF0D9 /* DemoView.swift */,
 				12573EB5288F67C40024A9A6 /* Main.storyboard */,
-				12573EB8288F67C50024A9A6 /* Assets.xcassets */,
 				12573EBA288F67C50024A9A6 /* LaunchScreen.storyboard */,
+				12573EB8288F67C50024A9A6 /* Assets.xcassets */,
+				12AF44A728AFA26E00FCE72C /* Nugget.usdz */,
 				12573EBD288F67C50024A9A6 /* Info.plist */,
 			);
 			path = "Tournament of the Minds";
@@ -130,6 +133,7 @@
 			files = (
 				12573EBC288F67C50024A9A6 /* LaunchScreen.storyboard in Resources */,
 				12573EB9288F67C50024A9A6 /* Assets.xcassets in Resources */,
+				12AF44A828AFA26E00FCE72C /* Nugget.usdz in Resources */,
 				12573EB7288F67C40024A9A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,8 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				12573EB4288F67C40024A9A6 /* ViewController.swift in Sources */,
-				120BDBBB288F6FDD0037DB87 /* MicroBitConnectivity.swift in Sources */,
 				12573EB0288F67C40024A9A6 /* AppDelegate.swift in Sources */,
+				12F81AEB28A33C3A009DF0D9 /* DemoView.swift in Sources */,
 				12573EB2288F67C40024A9A6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

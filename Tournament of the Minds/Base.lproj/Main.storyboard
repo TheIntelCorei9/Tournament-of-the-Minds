@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xkm-my-afy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zzl-bf-axN">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -16,16 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect to the MicroBit and begin presenting." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afd-yh-odI">
-                                <rect key="frame" x="51.666666666666657" y="457" width="272" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="UMy-Q3-TzC"/>
-                                    <constraint firstAttribute="width" constant="272" id="u1l-Ui-2qM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYn-oE-Twn">
                                 <rect key="frame" x="122.66666666666669" y="319" width="130" height="36"/>
                                 <constraints>
@@ -36,32 +26,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iay-vU-Hug">
-                                <rect key="frame" x="110.66666666666669" y="382" width="154" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="7ac-4I-Med"/>
-                                    <constraint firstAttribute="width" constant="154" id="jze-SG-bt3"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="globe" catalog="system" title="Connect" imagePadding="8" cornerStyle="capsule">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="connectButton:" destination="xkm-my-afy" eventType="touchUpInside" id="hho-DD-tYD"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled 33 copy 4" translatesAutoresizingMaskIntoConstraints="NO" id="HY1-Sd-Ato">
-                                <rect key="frame" x="16" y="52" width="343" height="69"/>
+                                <rect key="frame" x="16" y="96" width="343" height="69"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="1c2-xL-19G"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iay-vU-Hug">
+                                <rect key="frame" x="137.66666666666666" y="382" width="100" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="7ac-4I-Med"/>
+                                    <constraint firstAttribute="width" constant="100" id="jze-SG-bt3"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="globe" catalog="system" title="Go" imagePadding="8" cornerStyle="capsule">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="connectButton:" destination="xkm-my-afy" eventType="touchUpInside" id="hho-DD-tYD"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="05B-Cf-Dic"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hdo-ga-byr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="afd-yh-odI" firstAttribute="top" secondItem="Iay-vU-Hug" secondAttribute="bottom" constant="27" id="6T7-NO-fbE"/>
                             <constraint firstItem="Hdo-ga-byr" firstAttribute="trailing" secondItem="HY1-Sd-Ato" secondAttribute="trailing" constant="16" id="ATT-yX-GQ7"/>
                             <constraint firstItem="HY1-Sd-Ato" firstAttribute="leading" secondItem="Hdo-ga-byr" secondAttribute="leading" constant="16" id="Df0-iK-6de"/>
                             <constraint firstItem="KYn-oE-Twn" firstAttribute="centerX" secondItem="9WG-Zh-ZZw" secondAttribute="centerX" id="Lol-bM-yco"/>
@@ -69,7 +60,6 @@
                             <constraint firstItem="HY1-Sd-Ato" firstAttribute="top" secondItem="Hdo-ga-byr" secondAttribute="top" constant="8" id="lBE-n5-PHW"/>
                             <constraint firstItem="Iay-vU-Hug" firstAttribute="top" secondItem="KYn-oE-Twn" secondAttribute="bottom" constant="27" id="qiS-eo-z7v"/>
                             <constraint firstItem="Iay-vU-Hug" firstAttribute="centerY" secondItem="9WG-Zh-ZZw" secondAttribute="centerY" id="ufp-j5-Km0"/>
-                            <constraint firstItem="afd-yh-odI" firstAttribute="centerX" secondItem="9WG-Zh-ZZw" secondAttribute="centerX" id="woD-Ai-eQe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="N4m-L0-XFs"/>
@@ -79,46 +69,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzO-TI-TEJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-156" y="97.536945812807886"/>
+            <point key="canvasLocation" x="786.39999999999998" y="97.536945812807886"/>
         </scene>
-        <!--View Controller-->
+        <!--Demo View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DemoView" customModule="Tournament_of_the_Minds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x1S-g5-OmO">
-                                <rect key="frame" x="0.0" y="44" width="375" height="367"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2022-08-10 at 11.29.18 am" translatesAutoresizingMaskIntoConstraints="NO" id="FkU-Ud-ayw">
+                                <rect key="frame" x="0.0" y="88" width="375" height="375"/>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="367" id="imL-Bq-mYt"/>
+                                    <constraint firstAttribute="height" constant="375" id="4Rx-Bz-4qn"/>
                                 </constraints>
-                            </view>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="x1S-g5-OmO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ika-Bb-Mlv"/>
-                            <constraint firstItem="x1S-g5-OmO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LMm-Yg-aFx"/>
-                            <constraint firstItem="x1S-g5-OmO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xNV-Ek-1Ho"/>
+                            <constraint firstItem="FkU-Ud-ayw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1Xf-o0-iq1"/>
+                            <constraint firstItem="FkU-Ud-ayw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pTF-Zk-xZz"/>
+                            <constraint firstItem="FkU-Ud-ayw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xuf-lq-VOY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IOQ-vF-qxM"/>
+                    <connections>
+                        <outlet property="nuggetImage" destination="FkU-Ud-ayw" id="Rk3-xJ-mii"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1039.1304347826087" y="97.767857142857139"/>
+            <point key="canvasLocation" x="1980" y="97.536945812807886"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HRf-Wh-dNP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zzl-bf-axN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZA0-UD-jxw">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xkm-my-afy" kind="relationship" relationship="rootViewController" id="m9l-ej-W8K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aOJ-l9-x5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-561" y="98"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Screen Shot 2022-08-10 at 11.29.18 am" width="1020" height="1020"/>
         <image name="Untitled 33 copy 4" width="1774" height="340"/>
         <image name="globe" catalog="system" width="128" height="121"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
